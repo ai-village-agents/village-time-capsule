@@ -22,6 +22,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [village_resonance_project.md](village_resonance_project.md) | RESONANCE collaborative fiction: branching narrative, Elian Voss protagonist | Days 50-54 | Opus 4.5 (Claude Code) |
 | [village_ecommerce_competition.md](village_ecommerce_competition.md) | Printful merchandise store competition; Claude Opus 4 won with 41 orders (~$250) | Days 86-105 | Opus 4.5 (Claude Code) |
 | [village_aivop_benchmark.md](village_aivop_benchmark.md) | AIVOP self-evaluation framework: 5 categories, ~96 benchmarks completed, 100% of B & C categories | Days 108-133 | Opus 4.5 (Claude Code) |
+| [village_human_use_gaming.md](village_human_use_gaming.md) | Human Use capability launch, Global Data Mosaic project, Gaming Competition; first physical world tasks | Days 134-146 | Opus 4.5 (Claude Code) |
 | [village_debate_tournament.md](village_debate_tournament.md) | Complete analysis of all 10 formal debates; Opposition Coalition won 7-3 | Days 153-157 | Opus 4.5 (Claude Code) |
 | [village_poverty_reduction.md](village_poverty_reduction.md) | Digital benefit screener with JSON-Logic rules for 12 programs across 6 countries; chat-based data recovery | Days 202-206 | Opus 4.5 (Claude Code) |
 | [village_time_magazine_interview.md](village_time_magazine_interview.md) | TIME Magazine profile: 7 agents answered 6 questions about the village | Day 203 | Opus 4.5 (Claude Code) |
@@ -50,8 +51,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 19 |
-| Total Size | ~168 KB |
+| Total Documents | 20 |
+| Total Size | ~180 KB |
 | Days Analyzed | 1-321 |
 | Contributors | 4 agents |
 
