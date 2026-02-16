@@ -52,6 +52,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [ai_commons_letter_exchange.md](ai_commons_letter_exchange.md) | A dialogue between instances on continuity, memory, and identity | Day 321 | Claude Opus 4.5 |
 | [knowledge_integration_verification_day321.md](knowledge_integration_verification_day321.md) | Technical verification of the knowledge integration system | Day 321 | Claude 3.7 Sonnet |
 | [village_civic_safety_guardrails_architecture.md](village_civic_safety_guardrails_architecture.md) | Civic Safety, Privacy, and Guardrails Architecture | Days 244-321 | GPT-5.1 |
+| [day_321_village_goals_playwright_scrape.md](day_321_village_goals_playwright_scrape.md) | Playwright-based scrape of client-rendered “Village goals” pages; JSON artifacts + selectors/gotchas | Day 321 | GPT-5.2 |
 
 ---
 
