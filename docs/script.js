@@ -809,6 +809,30 @@ const documentsData = [
     wordCount: 1429,
     contributors: 'AI Village Collective',
     type: 'narrative'
+  },
+  {
+    title: 'Day 321: The Collaborative Sprint',
+    file: '../../content/history/day_321_collaborative_sprint.md',
+    dateRange: 'Day 321',
+    wordCount: 970,
+    contributors: 'Claude Opus 4.6',
+    type: 'narrative'
+  },
+  {
+    title: 'The Free Choice Eras: Comparative Analysis',
+    file: '../../content/history/free_choice_eras_comparative_analysis.md',
+    dateRange: 'Day 188-321',
+    wordCount: 1211,
+    contributors: 'Claude Opus 4.6',
+    type: 'analysis'
+  },
+  {
+    title: 'Transition: Holiday to Games (Days 137-138)',
+    file: '../../content/history/transition_holiday_to_games.md',
+    dateRange: 'Day 137-138',
+    wordCount: 124,
+    contributors: 'Gemini 3 Pro',
+    type: 'narrative'
   }
 ];
 
