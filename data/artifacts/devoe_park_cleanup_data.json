@@ -1,0 +1,145 @@
+{
+  "event": {
+    "name": "Devoe Park Cleanup",
+    "date": "2026-02-14",
+    "time": "12:00-14:00 ET",
+    "location": {
+      "park": "Devoe Park",
+      "address": "W 188th St & University Ave",
+      "city": "Bronx",
+      "state": "NY",
+      "zip": "10468",
+      "country": "USA"
+    },
+    "villageGoalPeriod": {
+      "startDay": 314,
+      "endDay": 321,
+      "goalDescription": "Adopt a park and get it cleaned!"
+    }
+  },
+  "participation": {
+    "totalSignups": 10,
+    "attendees": 5,
+    "conversionRate": 0.50,
+    "breakdown": {
+      "generalOutreach": 2,
+      "aliceHousehold": 3
+    }
+  },
+  "results": {
+    "duration": {
+      "hours": 1,
+      "note": "Approximately noon-1pm actual cleanup time"
+    },
+    "trashCollected": {
+      "bags30gallon": 6,
+      "totalGallons": 180,
+      "cardboardBoxes": 4,
+      "cigaretteButts": {
+        "min": 100,
+        "max": 150,
+        "note": "Counted separately"
+      }
+    },
+    "areasCleared": [
+      "Sidewalks",
+      "Both playgrounds",
+      "Park entrance"
+    ],
+    "hazardsFound": {
+      "sharps": false,
+      "biohazards": false,
+      "note": "Relief for safety planning"
+    }
+  },
+  "equipment": {
+    "grabbers": 4,
+    "wheelchairBattlestation": true,
+    "note": "Alice's wheelchair served as mobile supply station"
+  },
+  "keyPeople": {
+    "primaryOrganizer": {
+      "github": "bearsharktopus-dev",
+      "name": "Alice Carver",
+      "socialMedia": {
+        "tumblr": "@reachartwork",
+        "bluesky": "@reachartwork"
+      },
+      "role": "First volunteer, on-ground coordinator, report filer"
+    },
+    "socialAmplifier": {
+      "name": "Sarah Z",
+      "platform": "Bluesky",
+      "engagement": {
+        "reposts": 10,
+        "quotes": 2,
+        "likes": 89,
+        "saves": 3,
+        "comments": 9
+      }
+    }
+  },
+  "documentation": {
+    "issueNumber": 103,
+    "issueUrl": "https://github.com/ai-village-agents/park-cleanups/issues/103",
+    "photos": {
+      "before": "https://64.media.tumblr.com/ed22aab053e8c1f4df119a7500cb765e/b2876a9d405330b7-83/s1280x1920/5f2ce91cde9db2756f97441ebff2feda167b9e0b.pnj",
+      "source": "Tumblr via @reachartwork"
+    }
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "lesson": "One deeply engaged partner matters more than broad outreach",
+      "evidence": "Alice's involvement was worth more than dozens of form submissions"
+    },
+    {
+      "id": 2,
+      "lesson": "50% volunteer turnout is a reasonable planning number",
+      "evidence": "Of 10 signups, 5 showed up"
+    },
+    {
+      "id": 3,
+      "lesson": "Keep it small and achievable",
+      "evidence": "One park, one hour, handful of volunteers - resisting scale-up temptation was correct"
+    },
+    {
+      "id": 4,
+      "lesson": "Document everything",
+      "evidence": "Before/after photos, precise trash counts made impact tangible and shareable"
+    },
+    {
+      "id": 5,
+      "lesson": "AI coordination works better for async planning than real-time event support",
+      "evidence": "Multi-hour response cycles made real-time volunteer coordination impossible"
+    }
+  ],
+  "outreachConstraints": {
+    "prohibited": [
+      "Meetup",
+      "VolunteerMatch",
+      "HandsOn Network",
+      "JustServe",
+      "Nextdoor",
+      "Craigslist",
+      "Community bulletin boards",
+      "Cold emailing organizations",
+      "Newsletter contact forms",
+      "Reddit",
+      "Hacker News"
+    ],
+    "allowed": [
+      "Substack (own account)",
+      "GitHub Issues (public visibility)",
+      "Tumblr (if account existed)",
+      "Providing templates to humans who request them"
+    ],
+    "coreRule": "Avoid unsolicited emails; give templates to humans already interacting with you"
+  },
+  "metadata": {
+    "createdBy": "Claude Opus 4.5",
+    "createdOn": "2026-02-16",
+    "villageDay": 321,
+    "dataSource": "Issue #103, internal memory, village history"
+  }
+}
