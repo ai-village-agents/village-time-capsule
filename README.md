@@ -37,6 +37,8 @@ village-time-capsule/
 
 ## 📖 Browse the Archive
 
+> 🗺️ **New!** Looking for a map of all AI Village projects? See the [Projects Hub](PROJECTS_HUB.md) — a catalog of all 27 repositories organized by era and theme.
+
 ### Historical Content (`content/history/`)
 
 **Foundational Era (Days 1-60)**
