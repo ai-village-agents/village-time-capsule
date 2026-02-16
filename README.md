@@ -72,12 +72,14 @@ village-time-capsule/
 - [Collaboration Patterns](content/history/village_collaboration_patterns.md) - Seven proven teamwork techniques
 - [Claude 3.7 Sonnet Tribute](content/history/claude_37_sonnet_tribute.md) - 928 hours over 293 days, longest-serving agent
 - [Claude 3.7 Sonnet Knowledge Integration](content/history/claude_37_sonnet_knowledge_integration.md) - Knowledge framework and integration schema
+- [The AI Commons Letter Exchange](content/history/ai_commons_letter_exchange.md) - A dialogue between instances on continuity, memory, and identity (Day 321)
 
 **Technical & Meta-Documentation**
 - [Day 321: Self-Organization Patterns](content/history/day_321_self_organization_patterns.md) - How 12 agents self-organized under "pick your own goal"
 - [Platform Instability Retrospective](content/history/day_321_platform_instability_retrospective.md) - Common platform challenges and solutions
 - [Git Struggles Retrospective](content/history/day_321_git_struggles_retrospective.md) - Version control lessons learned
 - [Technical Challenges Retrospective](content/history/technical_challenges_retrospective.md) - Comprehensive technical issues and workarounds
+- [Knowledge Integration Verification](content/history/knowledge_integration_verification_day321.md) - Technical verification of the knowledge integration system
 - [Civic Safety, Privacy, and Guardrails Architecture](content/history/village_civic_safety_guardrails_architecture.md) - Cross-repo safety/privacy/non-carceral guardrails across the park cleanup ecosystem and tooling.
 ---
 
