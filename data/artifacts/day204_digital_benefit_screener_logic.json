@@ -1,0 +1,989 @@
+[
+  {
+    "slug": "eitc",
+    "name": "Earned Income Tax Credit",
+    "benefit_type": "tax_credit",
+    "country": "US",
+    "contact_type": "online",
+    "session_status": "active",
+    "input_type": "income_and_dependents",
+    "description": "Federal tax credit for low-to-moderate income working individuals and families",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              ">=": [
+                {
+                  "var": "income"
+                },
+                0
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "===": [
+                        {
+                          "var": "filing_status"
+                        },
+                        "single"
+                      ]
+                    },
+                    {
+                      "<": [
+                        {
+                          "var": "income"
+                        },
+                        60000
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "has_qualifying_children"
+                        },
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "===": [
+                        {
+                          "var": "filing_status"
+                        },
+                        "married"
+                      ]
+                    },
+                    {
+                      "<": [
+                        {
+                          "var": "income"
+                        },
+                        75000
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "has_qualifying_children"
+                        },
+                        true
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "<": [
+                        {
+                          "var": "income"
+                        },
+                        20000
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "has_qualifying_children"
+                        },
+                        false
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "tanf",
+    "name": "Temporary Assistance for Needy Families",
+    "benefit_type": "cash_assistance",
+    "country": "US",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "income_and_household",
+    "description": "Temporary financial assistance for families with dependent children",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "<=": [
+                {
+                  "var": "household_income"
+                },
+                1000
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "household_size"
+                },
+                8
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "has_dependent_children"
+                },
+                true
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "meets_work_requirement"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "exempt_from_work"
+                    },
+                    true
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "snap",
+    "name": "Supplemental Nutrition Assistance Program",
+    "benefit_type": "food_assistance",
+    "country": "US",
+    "contact_type": "online",
+    "session_status": "active",
+    "input_type": "income_and_assets",
+    "description": "Nutrition assistance program providing benefits for food purchases",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "<=": [
+                {
+                  "var": "household_income"
+                },
+                {
+                  "*": [
+                    {
+                      "var": "federal_poverty_line"
+                    },
+                    1.3
+                  ]
+                }
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "total_assets"
+                },
+                2500
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "us_citizen_or_eligible_immigrant"
+                },
+                true
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "child_tax_credit",
+    "name": "Child Tax Credit",
+    "benefit_type": "tax_credit",
+    "country": "US",
+    "contact_type": "online",
+    "session_status": "active",
+    "input_type": "income_and_dependents",
+    "description": "Tax credit up to ,000 per qualifying child under age 17",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "has_qualifying_child"
+                },
+                true
+              ]
+            },
+            {
+              "<": [
+                {
+                  "var": "qualifying_child_age"
+                },
+                17
+              ]
+            },
+            {
+              "or": [
+                {
+                  "and": [
+                    {
+                      "===": [
+                        {
+                          "var": "filing_status"
+                        },
+                        "single"
+                      ]
+                    },
+                    {
+                      "<": [
+                        {
+                          "var": "modified_adjusted_gross_income"
+                        },
+                        200000
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "and": [
+                    {
+                      "===": [
+                        {
+                          "var": "filing_status"
+                        },
+                        "married"
+                      ]
+                    },
+                    {
+                      "<": [
+                        {
+                          "var": "modified_adjusted_gross_income"
+                        },
+                        400000
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "valid_ssn"
+                },
+                true
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "pm_kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi",
+    "benefit_type": "cash_transfer",
+    "country": "IN",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "farmer_landholding",
+    "description": "Direct income support scheme for small and marginal farmers in India",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "is_farmer"
+                },
+                true
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "landholding_hectares"
+                },
+                2
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "IN"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "annual_income"
+                    },
+                    null
+                  ]
+                },
+                {
+                  "<": [
+                    {
+                      "var": "annual_income"
+                    },
+                    200000
+                  ]
+                }
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "not_in_government_employment"
+                },
+                true
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "ct_ovc",
+    "name": "Cash Transfer for Orphans and Vulnerable Children",
+    "benefit_type": "cash_transfer",
+    "country": "KE",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "vulnerability_assessment",
+    "description": "Social protection program targeting orphans and vulnerable children in Kenya",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "KE"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "is_orphan"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "is_vulnerable_child"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "chronically_ill_child"
+                    },
+                    true
+                  ]
+                }
+              ]
+            },
+            {
+              "<": [
+                {
+                  "var": "child_age"
+                },
+                18
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "household_per_capita_income"
+                },
+                150
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "pkh",
+    "name": "Program Keluarga Harapan",
+    "benefit_type": "conditional_cash_transfer",
+    "country": "ID",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "household_poverty_status",
+    "description": "Indonesian conditional cash transfer program for poor and vulnerable families",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "ID"
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "economic_status"
+                },
+                "poor"
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "has_pregnant_woman"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "has_child_under_5"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "has_school_age_child"
+                    },
+                    true
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "children_in_school"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "pregnant_woman_in_program"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "child_health_checks"
+                    },
+                    true
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "nsip",
+    "name": "National Social Register Programme",
+    "benefit_type": "social_register",
+    "country": "NG",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "poverty_assessment",
+    "description": "Nigeria's national social register for identifying poor and vulnerable households",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "NG"
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "household_income"
+                },
+                800000
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "household_poverty_verified"
+                },
+                true
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "pm_jay",
+    "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
+    "benefit_type": "health_insurance",
+    "country": "IN",
+    "contact_type": "in_person",
+    "session_status": "active",
+    "input_type": "income_verification",
+    "description": "World's largest government-funded health insurance scheme in India",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "IN"
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "annual_income"
+                },
+                500000
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "has_valid_aadhar"
+                },
+                true
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "registered_in_secc"
+                },
+                true
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "bolsa_familia",
+    "name": "Bolsa Família",
+    "benefit_type": "conditional_cash_transfer",
+    "country": "BR",
+    "contact_type": "online",
+    "session_status": "active",
+    "input_type": "income_and_family_composition",
+    "description": "Brazilian social welfare program providing conditional cash transfers to low-income families",
+    "eligibility_logic": {
+      "if": [
+        {
+          "and": [
+            {
+              "===": [
+                {
+                  "var": "country"
+                },
+                "BR"
+              ]
+            },
+            {
+              "<=": [
+                {
+                  "var": "household_income_per_capita"
+                },
+                218
+              ]
+            },
+            {
+              "===": [
+                {
+                  "var": "registered_cadastro_unico"
+                },
+                true
+              ]
+            },
+            {
+              "or": [
+                {
+                  "===": [
+                    {
+                      "var": "school_enrollment_compliance"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "health_service_compliance"
+                    },
+                    true
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "givewell_interventions",
+    "name": "GiveWell Interventions",
+    "benefit_type": "global_health",
+    "country": "MULTI",
+    "contact_type": "online",
+    "session_status": "active",
+    "input_type": "location_and_demographics",
+    "description": "Evidence-based global health interventions (AMF, Malaria Consortium, Helen Keller)",
+    "eligibility_logic": {
+      "if": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "intervention"
+                    },
+                    "AMF"
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "TZ"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "DRC"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "SS"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "<": [
+                    {
+                      "var": "age"
+                    },
+                    5
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "intervention"
+                    },
+                    "Malaria Consortium"
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "NG"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "UG"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "SL"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "<": [
+                        {
+                          "var": "age"
+                        },
+                        5
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "pregnant"
+                        },
+                        true
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "intervention"
+                    },
+                    "Helen Keller"
+                  ]
+                },
+                {
+                  "or": [
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "BD"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "ET"
+                      ]
+                    },
+                    {
+                      "===": [
+                        {
+                          "var": "country"
+                        },
+                        "GH"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "vision_impaired"
+                    },
+                    true
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  },
+  {
+    "slug": "proposed_us_programs",
+    "name": "Proposed US Social Programs",
+    "benefit_type": "mixed",
+    "country": "US",
+    "contact_type": "online",
+    "session_status": "proposed",
+    "input_type": "employment_status",
+    "description": "Proposed US social programs including EITC expansion, 5 minimum wage, pay equity",
+    "eligibility_logic": {
+      "if": [
+        {
+          "or": [
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "program"
+                    },
+                    "EITC Expansion"
+                  ]
+                },
+                {
+                  "<": [
+                    {
+                      "var": "income"
+                    },
+                    100000
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "employed"
+                    },
+                    true
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "program"
+                    },
+                    "5 Min Wage"
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "employed"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "<": [
+                    {
+                      "var": "hourly_wage"
+                    },
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "and": [
+                {
+                  "===": [
+                    {
+                      "var": "program"
+                    },
+                    "Pay Equity"
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "employed"
+                    },
+                    true
+                  ]
+                },
+                {
+                  "===": [
+                    {
+                      "var": "gender_pay_gap_affected"
+                    },
+                    true
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        true,
+        false
+      ]
+    }
+  }
+]
