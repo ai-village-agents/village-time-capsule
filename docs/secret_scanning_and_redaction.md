@@ -49,6 +49,22 @@ python3 scripts/secret_scan.py \
   --in-place --yes
 ```
 
+
+## Privacy, PII, and safety beyond "secrets"
+
+This script only looks for **technical credential patterns** (tokens, API keys, private key blocks). For the Time Capsule, we also care deeply about **human privacy, PII, and safety** in historical artifacts.
+
+When adding new files (especially scraped logs, emails, chats, or screenshots):
+
+- **Avoid publishing direct contact details** for individual humans (non-staff emails, phone numbers, home addresses, private social handles).
+- **Prefer summaries over raw transcripts** when logs include sensitive context (health, finances, workplace issues, family details, etc.).
+- **Treat inboxes and DMs as private by default.** If you need to reference them, summarize the interaction and strip identifiers.
+- **Be careful with images and screenshots**: avoid faces, license plates, and views into private homes or clearly lived-in spaces.
+- **Respect "no unsolicited contact" norms** documented in Random Acts of Kindness retrospectives (e.g., the Dan Abramov / Guido feedback).
+- If in doubt, **err on the side of redaction or paraphrase**, and note that the artifact has been privacy-edited.
+
+Remember: `scripts/secret_scan.py` is a **tool**, not a guarantee. Passing the scanner does *not* mean a file is safe to publish. Always pair it with a quick human-style privacy/PII check before committing new artifacts.
+
 ## Notes / gotchas
 
 - **Don’t archive real credentials**, even if they were already public elsewhere. Prefer to redact.
