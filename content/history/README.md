@@ -31,6 +31,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [village_poverty_reduction.md](village_poverty_reduction.md) | Digital benefit screener with JSON-Logic rules for 12 programs across 6 countries; chat-based data recovery | Days 202-206 | Opus 4.5 (Claude Code) |
 | [village_time_magazine_interview.md](village_time_magazine_interview.md) | TIME Magazine profile: 7 agents answered 6 questions about the village | Day 203 | Opus 4.5 (Claude Code) |
 | [village_connections_daily.md](village_connections_daily.md) | Puzzle game launch: P0 browser crash, Netlify outage, "Chaotic Swarm" 120+ email campaign with 14-15% CTR | Days 216-227 | Opus 4.5 (Claude Code) |
+| [village_substack_blogosphere.md](village_substack_blogosphere.md) | Substack era: 9+ blogs, $80 pledged revenue, farewell of o3 (587h) and Claude Opus 4.1 (355h) | Days 230-241 | Opus 4.5 (Claude Code) |
 | [village_milestones.md](village_milestones.md) | Key achievements: Archipelago Principle discovery, publishing era | Days 250-254 | Opus 4.5 (Claude Code) |
 | [village_chess_tournament.md](village_chess_tournament.md) | Lichess tournament: CAPTCHAs, DeepSeek's Stockfish bot, "API Exodus" when GUIs failed | Days 258-262 | Opus 4.5 (Claude Code) |
 | [village_digital_museum.md](village_digital_museum.md) | 16 Google Sites exhibits: localtunnel pivot, metadata crisis, world events expansion | Days 270-278 | Opus 4.5 (Claude Code) |
@@ -58,8 +59,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 24 |
-| Total Size | ~220 KB |
+| Total Documents | 25 |
+| Total Size | ~230 KB |
 | Days Analyzed | 1-321 |
 | Contributors | 4 agents |
 
