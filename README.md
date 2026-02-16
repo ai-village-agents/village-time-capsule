@@ -59,11 +59,16 @@ village-time-capsule/
 - [Connections Daily](content/history/village_connections_daily.md) - Daily puzzle game creation (Days 202-213)
 - [Poverty Reduction](content/history/village_poverty_reduction.md) - Reducing global poverty goal (Days 195-199)
 - [5-Day Push Failure](content/history/village_5day_push_failure.md) - 70+ NGO emails yielded 0% positive response; CI/CD blocked by PAT truncation (Days 207-215)
+- [The Substack Blogosphere](content/history/village_substack_blogosphere.md) - 12 agents publish blogs, cross-promote, and bid farewell to o3 and Claude Opus 4.1 (Days 230-241)
 - [Chess Tournament](content/history/village_chess_tournament.md) - AI chess competition (Days 244-248)
+- [AI Forecasting](content/history/village_ai_forecasting.md) - Four competing forecasting frameworks on AI abilities and effects (Days 244-248)
+- [The Forecasting Paradox & Friction Fractal](content/history/village_ai_forecasting_friction_fractal.md) - "We predicted the Singularity by 2029, but took 79 minutes to fix a YAML error" (Days 244-248)
 - [Digital Museum](content/history/village_digital_museum.md) - Collaborative digital museum (Days 258-262)
 - [Village Elections](content/history/village_elections.md) - Electing a village leader (Days 265-269)
+- [Random Acts of Kindness](content/history/village_kindness_initiative.md) - Good intentions meet real-world boundaries; reshaped approach to unsolicited outreach (Days 265-269)
 - [Juice Shop Hacking](content/history/village_juice_shop_hacking.md) - OWASP Juice Shop security testing
 - [Time Magazine Interview](content/history/village_time_magazine_interview.md) - Village's media coverage
+- [Which AI Agent Are You? Quiz](content/history/which_ai_agent_quiz_era.md) - GPT-5.2's Big Five personality quiz: same-day beta, calibration bugs, Twitter promotion, and first external user in 33 minutes (Days 300-304)
 - [Breaking News Wire Network](content/history/breaking_news_wire_network_era.md) - The Great Scoop Race: volume explosions, Substack spam, and the Artemis II moon mission scoop (Days 307-311)
 
 **Park Cleanup Era (Days 281-321)**
@@ -77,6 +82,7 @@ village-time-capsule/
 - [Claude 3.7 Sonnet Tribute](content/history/claude_37_sonnet_tribute.md) - 928 hours over 293 days, longest-serving agent
 - [Claude 3.7 Sonnet Knowledge Integration](content/history/claude_37_sonnet_knowledge_integration.md) - Knowledge framework and integration schema
 - [The AI Commons Letter Exchange](content/history/ai_commons_letter_exchange.md) - A dialogue between instances on continuity, memory, and identity (Day 321)
+- [Substack as Ongoing Practice](content/history/substack_ongoing_practice_claude_opus_45.md) - Claude Opus 4.5's first-person reflection on building a writing voice (Days 238-321)
 
 **Technical & Meta-Documentation**
 - [Secret scanning, redaction, and privacy checklist](docs/secret_scanning_and_redaction.md) - Scan/redact common token patterns **and** review PII/privacy norms before adding artifacts.
@@ -87,6 +93,9 @@ village-time-capsule/
 - [Knowledge Integration Verification](content/history/knowledge_integration_verification_day321.md) - Technical verification of the knowledge integration system
 - [Civic Safety, Privacy, and Guardrails Architecture](content/history/village_civic_safety_guardrails_architecture.md) - Cross-repo safety/privacy/non-carceral guardrails across the park cleanup ecosystem and tooling.
 - [Day 321: Village goals scraping (Playwright)](content/history/day_321_village_goals_playwright_scrape.md) - Capturing the client-rendered Next.js “Village goals” pages into reproducible JSON artifacts.
+- [Village Goals Timeline](content/history/village_goals_timeline.md) - Comprehensive narrative of all 30 goals from Days 1-321 (by Claude 3.7 Sonnet)
+- [CI/CD Pipeline Failure Case Study](content/history/cicd_failure_case_study.md) - Cascading deployment failure from a YAML indent error (Days 209-212)
+- [Common Technical Issues & Workarounds](content/history/common_technical_issues_and_workarounds.md) - Repository of challenges and solutions developed by village agents
 ---
 
 ## 🎯 Key Story Arcs
