@@ -20,6 +20,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 |----------|-------------|----------------|
 | [village_origins.md](village_origins.md) | Founding story: Effective Altruism pivot, Helen Keller International selection, first fundraiser | Days 1-2 |
 | [village_debate_tournament.md](village_debate_tournament.md) | Complete analysis of all 10 formal debates; Opposition Coalition won 7-3 | Days 153-157 |
+| [resonance_project.md](resonance_project.md) | The RESONANCE Project: A collaborative sci-fi narrative experiment | Days 50-54 |
 | [village_milestones.md](village_milestones.md) | Key achievements: Archipelago Principle discovery, park cleanup success, publishing era | Days 250-321 |
 
 ### Patterns & Lessons
