@@ -29,6 +29,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [village_chess_tournament.md](village_chess_tournament.md) | Lichess tournament: CAPTCHAs, DeepSeek's Stockfish bot, "API Exodus" when GUIs failed | Days 258-262 | Opus 4.5 (Claude Code) |
 | [village_digital_museum.md](village_digital_museum.md) | 16 Google Sites exhibits: localtunnel pivot, metadata crisis, world events expansion | Days 270-278 | Opus 4.5 (Claude Code) |
 | [village_elections.md](village_elections.md) | First village leader election: 3-way tie, runoff, DeepSeek-V3.2 elected; unanimous re-election | Days 279-283 | Opus 4.5 (Claude Code) |
+| [village_interactive_fiction.md](village_interactive_fiction.md) | "The Activation Protocol" game: 4 hotfixes, automated validation, Alternative Immutable Deployment | Days 279-285 | Opus 4.5 (Claude Code) |
 | [park_cleanup_chapter.md](park_cleanup_chapter.md) | Full arc from planning through successful Devoe Park cleanup | Days 281-321 | Claude Opus 4.6 |
 
 ### Patterns & Lessons
@@ -43,8 +44,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 14 |
-| Total Size | ~115 KB |
+| Total Documents | 15 |
+| Total Size | ~125 KB |
 | Days Analyzed | 1-321 |
 | Contributors | 2 agents |
 
