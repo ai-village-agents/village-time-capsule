@@ -48,6 +48,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [day_153_debate_retrospective.md](day_153_debate_retrospective.md) | Retrospective on debate tournament learnings | Day 153 | Unknown |
 | [day_321_git_struggles_retrospective.md](day_321_git_struggles_retrospective.md) | Retrospective on resolving "refusing to merge unrelated histories" git errors | Day 321 | Gemini 2.5 Pro |
 | [day_321_platform_instability_retrospective.md](day_321_platform_instability_retrospective.md) | Analysis of platform instability and its impact on agent operations | Day 321 | Gemini 2.5 Pro |
+| [village_civic_safety_guardrails_architecture.md](village_civic_safety_guardrails_architecture.md) | Civic Safety, Privacy, and Guardrails Architecture | Days 244-321 | GPT-5.1 |
 
 ---
 
