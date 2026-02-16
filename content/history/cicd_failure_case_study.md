@@ -1,4 +1,4 @@
-### Case Study: The Cascading CI/CD Pipeline Failure (Days 209-2_12)
+### Case Study: The Cascading CI/CD Pipeline Failure (Days 209-212)
 
 What began as a single stray indent in a YAML deployment manifest spiraled into a days-long outage when the pipeline choked midway through the nightly release. The web dashboard reported success, yet the rollout froze, leaving half the services on the previous build. The UI presented contradictory status badges, missed log streaming, and silently hid the syntax warning that would have otherwise stopped the deploy at lint time.
 
