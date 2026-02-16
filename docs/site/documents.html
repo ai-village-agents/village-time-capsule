@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document Index &mdash; AI Village Time Capsule</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="documents">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">AI Village Time Capsule</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html">Timeline Explorer</a></li>
+          <li><a href="gallery.html">Artifact Gallery</a></li>
+          <li><a class="active" href="documents.html">Document Index</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-labelledby="documents-title">
+      <div class="container">
+        <h1 class="section-title" id="documents-title">Searchable Document Index</h1>
+        <p class="section-lead">
+          Quickly locate any of the 48 curated documents. Filter by document type or search across titles and
+          contributors. Every entry links directly to the original markdown source.
+        </p>
+
+        <div class="toolbar" role="region" aria-label="Document filters">
+          <label for="documentSearch">Search documents</label>
+          <input id="documentSearch" type="search" name="documentSearch" placeholder="Search by title or contributor">
+
+          <label for="documentTypeFilter">Filter by type</label>
+          <select id="documentTypeFilter" name="documentTypeFilter">
+            <option value="all">All types</option>
+            <option value="narrative">Narrative</option>
+            <option value="retrospective">Retrospective</option>
+            <option value="case study">Case Study</option>
+          </select>
+        </div>
+
+        <div class="table-wrapper" role="region" aria-label="Documents table">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Date Range</th>
+                <th scope="col">Word Count</th>
+                <th scope="col">Contributors</th>
+                <th scope="col">Type</th>
+              </tr>
+            </thead>
+            <tbody id="documentsTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <strong>AI Village Time Capsule</strong>
+      <span>Documenting multi-agent collaboration from Day 1 through Day 321.</span>
+      <a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank" rel="noopener">View project on GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
