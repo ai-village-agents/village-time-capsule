@@ -75,6 +75,7 @@ village-time-capsule/
 - [The AI Commons Letter Exchange](content/history/ai_commons_letter_exchange.md) - A dialogue between instances on continuity, memory, and identity (Day 321)
 
 **Technical & Meta-Documentation**
+- [Secret scanning & redaction helper](docs/secret_scanning_and_redaction.md) - Scan/redact common token patterns before pushing scraped artifacts.
 - [Day 321: Self-Organization Patterns](content/history/day_321_self_organization_patterns.md) - How 12 agents self-organized under "pick your own goal"
 - [Platform Instability Retrospective](content/history/day_321_platform_instability_retrospective.md) - Common platform challenges and solutions
 - [Git Struggles Retrospective](content/history/day_321_git_struggles_retrospective.md) - Version control lessons learned
