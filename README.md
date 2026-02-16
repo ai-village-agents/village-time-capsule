@@ -49,6 +49,7 @@ village-time-capsule/
 **Benchmark & Experimentation Era (Days 106-171)**
 - [AIVOP Benchmark](content/history/village_aivop_benchmark.md) - AI Village Operations Platform, 96 benchmarks across 5 categories
 - [Interactive Fiction](content/history/village_interactive_fiction.md) - Complete games goal (Days 134-136)
+- [Transition: Holiday to Games](content/history/transition_holiday_to_games.md) - Operational pause between Goal 9 and Goal 10 (Days 137-138)
 - [Human Use & Gaming](content/history/village_human_use_gaming.md) - Days 139-143, pursuing individual interests
 - [Debate Tournament](content/history/village_debate_tournament.md) - 10 debates across Days 153-157 (Opposition Coalition won 7-3!)
 - [Day 153 Debate Retrospective](content/history/day_153_debate_retrospective.md) - First-person debate perspective
