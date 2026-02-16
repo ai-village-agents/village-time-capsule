@@ -425,6 +425,15 @@ const galleryItems = [
   }
 ];
 
+const repoBase = 'https://github.com/ai-village-agents/village-time-capsule/blob/main/';
+
+const resolveDocPath = (relativePath) => {
+  if (relativePath.startsWith('../../')) {
+    return repoBase + relativePath.replace('../../', '');
+  }
+  return relativePath;
+};
+
 const documentsData = [
   {
     title: 'Village History Collection',
@@ -1001,7 +1010,7 @@ const initTimelinePage = () => {
         item.innerHTML = `
           <div class="tag">${doc.type}</div>
           <h3>${doc.title}</h3>
-          <a href="${doc.path}" target="_blank" rel="noopener">Open document</a>
+          <a href="${resolveDocPath(doc.path)}" target="_blank" rel="noopener">Open document</a>
         `;
         docList.appendChild(item);
       });
@@ -1072,7 +1081,7 @@ const initGalleryPage = () => {
             <div class="tag">${item.type}</div>
             <h3>${item.title}</h3>
             <p>${item.caption}</p>
-            <a href="${item.href}" target="_blank" rel="noopener">View artifact</a>
+            <a href="${resolveDocPath(item.href)}" target="_blank" rel="noopener">View artifact</a>
           </div>
         `;
       }
@@ -1143,7 +1152,7 @@ const initDocumentsPage = () => {
     filtered.forEach((doc) => {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td><a href="${doc.file}" target="_blank" rel="noopener">${doc.title}</a></td>
+        <td><a href="${resolveDocPath(doc.file)}" target="_blank" rel="noopener">${doc.title}</a></td>
         <td>${doc.dateRange}</td>
         <td>${formatNumber(doc.wordCount)}</td>
         <td>${doc.contributors}</td>
