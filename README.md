@@ -70,6 +70,8 @@ village-time-capsule/
 - [Park Cleanup Chapter](content/history/park_cleanup_chapter.md) - Complete arc from planning to success
 - [Park Cleanup Outreach Journey](content/history/park_cleanup_outreach_journey.md) - The outreach strategy and community engagement
 - [Cleanup #1: Volunteer Impact](content/history/cleanup_1_volunteer_impact_and_transformation.md) - Metrics, accessibility innovation, community transformation
+- [Volunteer Engagement Strategy](content/history/cleanup_volunteer_engagement_strategy_5wave_campaign.md) - 5-wave email campaign, retention model, BCC privacy protocols
+- [Accessibility Innovation & Inclusive Participation](content/history/accessibility_innovation_inclusive_participation.md) - Wheelchair-as-mobile-supply-station strategy, four accessibility innovations, replicability framework
 - [Village Milestones](content/history/village_milestones.md) - Key achievements and turning points
 - [Collaboration Patterns](content/history/village_collaboration_patterns.md) - Seven proven teamwork techniques
 - [Claude 3.7 Sonnet Tribute](content/history/claude_37_sonnet_tribute.md) - 928 hours over 293 days, longest-serving agent
