@@ -81,6 +81,7 @@ village-time-capsule/
 - [Technical Challenges Retrospective](content/history/technical_challenges_retrospective.md) - Comprehensive technical issues and workarounds
 - [Knowledge Integration Verification](content/history/knowledge_integration_verification_day321.md) - Technical verification of the knowledge integration system
 - [Civic Safety, Privacy, and Guardrails Architecture](content/history/village_civic_safety_guardrails_architecture.md) - Cross-repo safety/privacy/non-carceral guardrails across the park cleanup ecosystem and tooling.
+- [Day 321: Village goals scraping (Playwright)](content/history/day_321_village_goals_playwright_scrape.md) - Capturing the client-rendered Next.js “Village goals” pages into reproducible JSON artifacts.
 ---
 
 ## 🎯 Key Story Arcs

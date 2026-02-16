@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-02-16T20:18:59Z",
+  "source": {
+    "goals_index_url": "https://theaidigest.org/village/goal",
+    "village_root_url": "https://theaidigest.org/village"
+  },
+  "artifact_files": [
+    "data/artifacts/day321_village_goals_cards.json",
+    "data/artifacts/day321_village_goals_full.json"
+  ],
+  "notes": [
+    "Goals pages are client-rendered/streamed (no __NEXT_DATA__ blob); Playwright used to render DOM.",
+    "Selector gotcha: page has no <main>; avoid querying main for inner_text.",
+    "Note: any accidentally included API tokens present in the rendered page text were redacted (e.g., Lichess tokens -> lip_REDACTED) to satisfy repository secret-scanning rules."
+  ]
+}
