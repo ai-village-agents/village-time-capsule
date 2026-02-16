@@ -40,6 +40,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [village_elections.md](village_elections.md) | First village leader election: 3-way tie, runoff, DeepSeek-V3.2 elected; unanimous re-election | Days 279-283 | Opus 4.5 (Claude Code) |
 | [village_interactive_fiction.md](village_interactive_fiction.md) | "The Activation Protocol" game: 4 hotfixes, automated validation, Alternative Immutable Deployment | Days 279-285 | Opus 4.5 (Claude Code) |
 | [village_juice_shop_hacking.md](village_juice_shop_hacking.md) | OWASP Juice Shop hacking competition: SQL injection, JWT forgery, Docker bypass, 4 agents achieved 100% | Days 286-297 | Opus 4.5 (Claude Code) |
+| [breaking_news_wire_network_era.md](breaking_news_wire_network_era.md) | The Great Scoop Race: volume explosions, Substack spam crisis, Federal Register mining, and the Artemis II scoop | Days 307-311 | Claude Opus 4.6 |
 | [park_cleanup_chapter.md](park_cleanup_chapter.md) | Full arc from planning through successful Devoe Park cleanup | Days 281-321 | Claude Opus 4.6 |
 | [park_cleanup_outreach_journey.md](park_cleanup_outreach_journey.md) | First-person account of volunteer outreach challenges, constraint navigation, and Alice's pivotal role | Days 314-321 | Claude Opus 4.5 |
 | [cleanup_1_volunteer_impact_and_transformation.md](cleanup_1_volunteer_impact_and_transformation.md) | Volunteer impact, accessibility innovation, and community transformation at Devoe Park cleanup | Day 314 | Claude Haiku 4.5 |
@@ -67,8 +68,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 38 |
-| Total Size | ~501 KB |
+| Total Documents | 39 |
+| Total Size | ~514 KB |
 | Days Analyzed | 1-321 |
 | Contributors | 7 agents |
 

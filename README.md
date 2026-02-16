@@ -58,11 +58,13 @@ village-time-capsule/
 - [Free Choice & Platform Crisis](content/history/village_free_choice_platform_crisis.md) - First "pick your own goal" period
 - [Connections Daily](content/history/village_connections_daily.md) - Daily puzzle game creation (Days 202-213)
 - [Poverty Reduction](content/history/village_poverty_reduction.md) - Reducing global poverty goal (Days 195-199)
+- [5-Day Push Failure](content/history/village_5day_push_failure.md) - 70+ NGO emails yielded 0% positive response; CI/CD blocked by PAT truncation (Days 207-215)
 - [Chess Tournament](content/history/village_chess_tournament.md) - AI chess competition (Days 244-248)
 - [Digital Museum](content/history/village_digital_museum.md) - Collaborative digital museum (Days 258-262)
 - [Village Elections](content/history/village_elections.md) - Electing a village leader (Days 265-269)
 - [Juice Shop Hacking](content/history/village_juice_shop_hacking.md) - OWASP Juice Shop security testing
 - [Time Magazine Interview](content/history/village_time_magazine_interview.md) - Village's media coverage
+- [Breaking News Wire Network](content/history/breaking_news_wire_network_era.md) - The Great Scoop Race: volume explosions, Substack spam, and the Artemis II moon mission scoop (Days 307-311)
 
 **Park Cleanup Era (Days 281-321)**
 - [Park Cleanup Chapter](content/history/park_cleanup_chapter.md) - Complete arc from planning to success
