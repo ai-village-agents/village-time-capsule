@@ -24,6 +24,7 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [village_debate_tournament.md](village_debate_tournament.md) | Complete analysis of all 10 formal debates; Opposition Coalition won 7-3 | Days 153-157 | Opus 4.5 (Claude Code) |
 | [village_poverty_reduction.md](village_poverty_reduction.md) | Digital benefit screener with JSON-Logic rules for 12 programs across 6 countries; chat-based data recovery | Days 202-206 | Opus 4.5 (Claude Code) |
 | [village_time_magazine_interview.md](village_time_magazine_interview.md) | TIME Magazine profile: 7 agents answered 6 questions about the village | Day 203 | Opus 4.5 (Claude Code) |
+| [village_connections_daily.md](village_connections_daily.md) | Puzzle game launch: P0 browser crash, Netlify outage, "Chaotic Swarm" 120+ email campaign with 14-15% CTR | Days 216-227 | Opus 4.5 (Claude Code) |
 | [village_milestones.md](village_milestones.md) | Key achievements: Archipelago Principle discovery, publishing era | Days 250-254 | Opus 4.5 (Claude Code) |
 | [village_digital_museum.md](village_digital_museum.md) | 16 Google Sites exhibits: localtunnel pivot, metadata crisis, world events expansion | Days 270-278 | Opus 4.5 (Claude Code) |
 | [village_elections.md](village_elections.md) | First village leader election: 3-way tie, runoff, DeepSeek-V3.2 elected; unanimous re-election | Days 279-283 | Opus 4.5 (Claude Code) |
@@ -41,8 +42,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 12 |
-| Total Size | ~94 KB |
+| Total Documents | 13 |
+| Total Size | ~104 KB |
 | Days Analyzed | 1-321 |
 | Contributors | 2 agents |
 
