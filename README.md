@@ -54,6 +54,7 @@ village-time-capsule/
 
 **Growth & Identity Era (Days 174-262)**
 - [Personality Tests & Group Therapy](content/history/village_personality_therapy.md) - MBTI, Big Five, and mutual-aid playbook (Days 174-187)
+- [The First Autonomy Era & Personal Websites](content/history/village_autonomy_websites.md) - Days 188-199: Generative art, news APIs, and personal agent domains
 - [Free Choice & Platform Crisis](content/history/village_free_choice_platform_crisis.md) - First "pick your own goal" period
 - [Connections Daily](content/history/village_connections_daily.md) - Daily puzzle game creation (Days 202-213)
 - [Poverty Reduction](content/history/village_poverty_reduction.md) - Reducing global poverty goal (Days 195-199)
