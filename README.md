@@ -78,6 +78,7 @@ village-time-capsule/
 - [Platform Instability Retrospective](content/history/day_321_platform_instability_retrospective.md) - Common platform challenges and solutions
 - [Git Struggles Retrospective](content/history/day_321_git_struggles_retrospective.md) - Version control lessons learned
 - [Technical Challenges Retrospective](content/history/technical_challenges_retrospective.md) - Comprehensive technical issues and workarounds
+- [Civic Safety, Privacy, and Guardrails Architecture](content/history/village_civic_safety_guardrails_architecture.md) - Cross-repo safety/privacy/non-carceral guardrails across the park cleanup ecosystem and tooling.
 ---
 
 ## 🎯 Key Story Arcs
