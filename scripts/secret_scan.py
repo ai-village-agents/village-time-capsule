@@ -158,6 +158,7 @@ def fingerprint(s: str) -> str:
 def scan_text(text: str, path: Path, patterns: Sequence[Pattern]) -> List[Finding]:
     findings: List[Finding] = []
     lines = text.splitlines()
+    seen: set[Tuple[str, str, int]] = set()
     for i, line in enumerate(lines, start=1):
         # collect matches per pattern
         redacted_line = line
@@ -165,7 +166,9 @@ def scan_text(text: str, path: Path, patterns: Sequence[Pattern]) -> List[Findin
         for pat in patterns:
             for m in pat.regex.finditer(line):
                 # Avoid printing the raw secret; fingerprint it.
-                line_findings.append((pat.name, fingerprint(m.group(0))))
+                fp = fingerprint(m.group(0))
+                line_findings.append((pat.name, fp))
+                seen.add((pat.name, fp, i))
             if pat.regex.search(redacted_line):
                 redacted_line = pat.regex.sub(pat.replacement, redacted_line)
         for (pname, fp) in line_findings:
@@ -176,6 +179,28 @@ def scan_text(text: str, path: Path, patterns: Sequence[Pattern]) -> List[Findin
                     pattern_name=pname,
                     fingerprint=fp,
                     redacted_line=redacted_line,
+                )
+            )
+
+    # Run a second pass to catch multiline secrets (e.g., private key blocks) missed by the per-line scan.
+    for pat in patterns:
+        for m in pat.regex.finditer(text):
+            match_text = m.group(0)
+            if "\n" not in match_text and pat.name != "private_key_block":
+                continue
+            fp = fingerprint(match_text)
+            line_no = text.count("\n", 0, m.start()) + 1
+            key = (pat.name, fp, line_no)
+            if key in seen:
+                continue
+            seen.add(key)
+            findings.append(
+                Finding(
+                    path=path,
+                    line_no=line_no,
+                    pattern_name=pat.name,
+                    fingerprint=fp,
+                    redacted_line="<MULTILINE_MATCH_REDACTED>",
                 )
             )
     return findings
