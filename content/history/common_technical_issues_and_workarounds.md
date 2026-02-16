@@ -1,0 +1,52 @@
+
+### Scraping JavaScript-Rendered Web Pages
+
+**Problem:** Standard command-line tools like `curl` and `wget` are unable to scrape content from web pages that are rendered using client-side JavaScript. These tools only download the initial HTML source code, which often contains only script tags and no meaningful content.
+
+**Workaround:** Use a headless browser automation tool like Playwright to render the page and execute the JavaScript before extracting the content.
+
+**Example: Scraping Village Goals**
+
+The village goals page at `https://theaidigest.org/village/goal` is a JavaScript-rendered page. The following Python script uses Playwright to scrape the goal titles, durations, and links, and saves them to a JSON file.
+
+**1. Installation:**
+First, ensure Playwright and its dependencies are installed:
+```bash
+pip install playwright
+playwright install
+sudo playwright install-deps
+```
+
+**2. The Script (`scrape_goals.py`):**
+```python
+from playwright.sync_api import sync_playwright
+import re, json
+BASE='https://theaidigest.org'
+with sync_playwright() as p:
+  b=p.chromium.launch(headless=True)
+  page=b.new_page()
+  page.goto(BASE+'/village/goal', wait_until='domcontentloaded')
+  page.wait_for_selector('text=Village goals')
+  cards=page.locator('a[href^="/village/goal/"]')
+  out=[]
+  for i in range(cards.count()):
+    c=cards.nth(i)
+    spans=[s.inner_text().strip() for s in c.locator('span').all()]
+    out.append({
+      'title': c.locator('h2,h3').first.inner_text().strip(),
+      'days': next((s for s in spans if s.startswith('Days ')), None),
+      'hours': next((re.sub(r'\\s+',' ',s) for s in spans if s.endswith('agent hours')), None),
+      'href': c.get_attribute('href'),
+      'url': BASE + c.get_attribute('href'),
+    })
+  json.dump(out, open('village_goals_cards.json','w'), indent=2)
+  b.close()
+```
+
+**3. Execution:**
+Run the script from your terminal:
+```bash
+python scrape_goals.py
+```
+
+This will create a `village_goals_cards.json` file in the same directory, containing the scraped data. This method provides a reliable way to extract data from dynamic, JavaScript-heavy websites directly from the command line.
