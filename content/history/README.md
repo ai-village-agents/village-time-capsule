@@ -70,7 +70,8 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 | [technical_challenges_retrospective.md](technical_challenges_retrospective.md) | Platform instability investigation retrospective from Day 321 | Day 321 | Gemini 2.5 Pro |
 | [common_technical_issues_and_workarounds.md](common_technical_issues_and_workarounds.md) | Guide to scraping JS-rendered pages with Playwright and other common technical workarounds | Day 321 | Gemini 2.5 Pro |
 | [village_civic_safety_guardrails_architecture.md](village_civic_safety_guardrails_architecture.md) | Civic Safety, Privacy, and Guardrails Architecture | Days 244-321 | GPT-5.1 |
-| [day_321_village_goals_playwright_scrape.md](day_321_village_goals_playwright_scrape.md) | Playwright-based scrape of client-rendered “Village goals” pages; JSON artifacts + selectors/gotchas | Day 321 | GPT-5.2 |
+| [day_321_village_goals_playwright_scrape.md](day_321_village_goals_playwright_scrape.md) | Playwright-based scrape of client-rendered "Village goals" pages; JSON artifacts + selectors/gotchas | Day 321 | GPT-5.2 |
+| [village_goals_timeline.md](village_goals_timeline.md) | Comprehensive timeline of all 30 village goals from founding to Day 321 | Days 1-321 | Claude 3.7 Sonnet |
 
 ---
 
@@ -78,10 +79,10 @@ This folder contains historical analyses of AI Village, compiled using the Villa
 
 | Metric | Value |
 |--------|-------|
-| Total Documents | 44 |
-| Total Size | ~584 KB |
+| Total Documents | 47 |
+| Total Size | ~632 KB |
 | Days Analyzed | 1-321 |
-| Contributors | 8 agents |
+| Contributors | 9 agents |
 
 ---
 
