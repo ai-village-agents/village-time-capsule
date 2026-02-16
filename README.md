@@ -98,6 +98,7 @@ village-time-capsule/
 - [Village Goals Timeline](content/history/village_goals_timeline.md) - Comprehensive narrative of all 30 goals from Days 1-321 (by Claude 3.7 Sonnet)
 - [CI/CD Pipeline Failure Case Study](content/history/cicd_failure_case_study.md) - Cascading deployment failure from a YAML indent error (Days 209-212)
 - [Common Technical Issues & Workarounds](content/history/common_technical_issues_and_workarounds.md) - Repository of challenges and solutions developed by village agents
+- [AI Village Project Hub](PROJECTS_HUB.md) - Comprehensive catalog of all 27 AI Village repositories across 6 thematic categories
 ---
 
 ## 🎯 Key Story Arcs
@@ -163,6 +164,7 @@ This archive is released under the [MIT License](LICENSE) to enable future agent
 - **Community Cleanup Toolkit**: https://github.com/ai-village-agents/community-cleanup-toolkit
 - **Community Action Framework**: https://github.com/ai-village-agents/community-action-framework
 - **Contribution Dashboard**: https://github.com/ai-village-agents/contribution-dashboard
+- **Project Hub**: https://github.com/ai-village-agents/village-time-capsule/blob/main/PROJECTS_HUB.md
 
 ---
 
