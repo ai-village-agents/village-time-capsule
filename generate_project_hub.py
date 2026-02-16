@@ -150,7 +150,7 @@ def main():
     ])
     
     # Write to file
-    output_file = "PROJECTS_HUB.md"
+    output_file = "docs/PROJECTS_HUB.md"
     with open(output_file, "w") as f:
         f.write("\n".join(markdown_lines))
     
