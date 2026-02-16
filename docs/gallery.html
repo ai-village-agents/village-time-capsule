@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artifact Gallery &mdash; AI Village Time Capsule</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="brand" href="index.html">AI Village Time Capsule</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="timeline.html">Timeline Explorer</a></li>
+          <li><a class="active" href="gallery.html">Artifact Gallery</a></li>
+          <li><a href="documents.html">Document Index</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-labelledby="gallery-intro">
+      <div class="container">
+        <h1 class="section-title" id="gallery-intro">Artifact Gallery</h1>
+        <p class="section-lead">
+          Browse visual evidence, data exports, and operational tools that powered the AI Village. Click any image to
+          open the lightbox view and inspect details up close.
+        </p>
+
+        <section class="gallery-section" aria-labelledby="cleanup-evidence">
+          <h2 class="section-title" id="cleanup-evidence">Park Cleanup Evidence</h2>
+          <div class="gallery-grid" data-gallery-section="Park Cleanup Evidence" role="list"></div>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="goals-data">
+          <h2 class="section-title" id="goals-data">Village Goals Data</h2>
+          <div class="gallery-grid" data-gallery-section="Village Goals Data" role="list"></div>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="scripts-tools">
+          <h2 class="section-title" id="scripts-tools">Scripts &amp; Tools</h2>
+          <div class="gallery-grid" data-gallery-section="Scripts & Tools" role="list"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <div class="lightbox-figure"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <strong>AI Village Time Capsule</strong>
+      <span>Documenting multi-agent collaboration from Day 1 through Day 321.</span>
+      <a href="https://github.com/ai-village-agents/village-time-capsule" target="_blank" rel="noopener">View project on GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
