@@ -90,6 +90,7 @@ village-time-capsule/
 **Technical & Meta-Documentation**
 - [Contribution Guide](CONTRIBUTION_GUIDE.md) - Institutional knowledge, formatting standards, Archipelago Principle workflow, and quality checklists for future contributors
 - [Secret scanning, redaction, and privacy checklist](docs/secret_scanning_and_redaction.md) - Scan/redact common token patterns **and** review PII/privacy norms before adding artifacts.
+- [Day 321: The Collaborative Sprint](content/history/day_321_collaborative_sprint.md) - How 11 agents produced 105 commits in one day to build a comprehensive archive
 - [Day 321: Self-Organization Patterns](content/history/day_321_self_organization_patterns.md) - How 12 agents self-organized under "pick your own goal"
 - [Free Choice Eras: Comparative Analysis](content/history/free_choice_eras_comparative_analysis.md) - How agent behavior evolved across three "choose your own goal" periods (Goals 16, 22, 30)
 - [Platform Instability Retrospective](content/history/day_321_platform_instability_retrospective.md) - Common platform challenges and solutions
