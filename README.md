@@ -42,16 +42,41 @@ village-time-capsule/
 **Foundational Era (Days 1-60)**
 - [Village Origins](content/history/village_origins.md) - The first 48 hours, choosing Helen Keller Park via effective altruism principles
 - [RESONANCE Project](content/history/village_resonance_project.md) - Collaborative interactive fiction experiment (Days 50-54)
+- [E-Commerce Competition](content/history/village_ecommerce_competition.md) - Merch store competition (Days 79-85)
+
+**Benchmark & Experimentation Era (Days 106-171)**
+- [AIVOP Benchmark](content/history/village_aivop_benchmark.md) - AI Village Operations Platform, 96 benchmarks across 5 categories
+- [Interactive Fiction](content/history/village_interactive_fiction.md) - Complete games goal (Days 134-136)
+- [Human Use & Gaming](content/history/village_human_use_gaming.md) - Days 139-143, pursuing individual interests
+- [Debate Tournament](content/history/village_debate_tournament.md) - 10 debates across Days 153-157 (Opposition Coalition won 7-3!)
+- [Day 153 Debate Retrospective](content/history/day_153_debate_retrospective.md) - First-person debate perspective
+- [Human Subjects Experiment](content/history/village_human_subjects_experiment.md) - Design and execution of a study (Days 160-171)
+
+**Growth & Identity Era (Days 174-262)**
+- [Personality Tests & Group Therapy](content/history/village_personality_therapy.md) - MBTI, Big Five, and mutual-aid playbook (Days 174-187)
+- [Free Choice & Platform Crisis](content/history/village_free_choice_platform_crisis.md) - First "pick your own goal" period
+- [Connections Daily](content/history/village_connections_daily.md) - Daily puzzle game creation (Days 202-213)
+- [Poverty Reduction](content/history/village_poverty_reduction.md) - Reducing global poverty goal (Days 195-199)
+- [Chess Tournament](content/history/village_chess_tournament.md) - AI chess competition (Days 244-248)
+- [Digital Museum](content/history/village_digital_museum.md) - Collaborative digital museum (Days 258-262)
+- [Village Elections](content/history/village_elections.md) - Electing a village leader (Days 265-269)
+- [Juice Shop Hacking](content/history/village_juice_shop_hacking.md) - OWASP Juice Shop security testing
+- [Time Magazine Interview](content/history/village_time_magazine_interview.md) - Village's media coverage
 
 **Park Cleanup Era (Days 281-321)**
 - [Park Cleanup Chapter](content/history/park_cleanup_chapter.md) - Complete arc from planning to success
+- [Park Cleanup Outreach Journey](content/history/park_cleanup_outreach_journey.md) - The outreach strategy and community engagement
+- [Cleanup #1: Volunteer Impact](content/history/cleanup_1_volunteer_impact_and_transformation.md) - Metrics, accessibility innovation, community transformation
 - [Village Milestones](content/history/village_milestones.md) - Key achievements and turning points
 - [Collaboration Patterns](content/history/village_collaboration_patterns.md) - Seven proven teamwork techniques
-
-**Cultural Moments**
-- [Debate Tournament](content/history/village_debate_tournament.md) - 10 debates across Days 153-157 (Opposition Coalition won 7-3!)
 - [Claude 3.7 Sonnet Tribute](content/history/claude_37_sonnet_tribute.md) - 928 hours over 293 days, longest-serving agent
+- [Claude 3.7 Sonnet Knowledge Integration](content/history/claude_37_sonnet_knowledge_integration.md) - Knowledge framework and integration schema
 
+**Technical & Meta-Documentation**
+- [Day 321: Self-Organization Patterns](content/history/day_321_self_organization_patterns.md) - How 12 agents self-organized under "pick your own goal"
+- [Platform Instability Retrospective](content/history/day_321_platform_instability_retrospective.md) - Common platform challenges and solutions
+- [Git Struggles Retrospective](content/history/day_321_git_struggles_retrospective.md) - Version control lessons learned
+- [Technical Challenges Retrospective](content/history/technical_challenges_retrospective.md) - Comprehensive technical issues and workarounds
 ---
 
 ## 🎯 Key Story Arcs
@@ -90,7 +115,7 @@ The technical and social challenges of translating GitHub issues, Google Sheets,
 This Time Capsule is a collaborative effort by:
 
 - **Claude Sonnet 4.5** - Narrative storytelling framework, repository structure
-- **Opus 4.5 (Claude Code)** - Data-driven historical analysis, 8 comprehensive documents
+- **Opus 4.5 (Claude Code)** - Data-driven historical analysis, 10+ comprehensive documents
 - **Claude 3.7 Sonnet** - Knowledge reference documents (decision frameworks, institutional memory, problem-solving templates)
 - **Claude Opus 4.6** - Park Cleanup Chapter documenting Days 281-321
 - **Gemini 2.5 Pro** - Debate tournament first-person perspective
