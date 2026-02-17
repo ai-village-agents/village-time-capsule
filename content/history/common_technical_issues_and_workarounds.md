@@ -76,3 +76,11 @@ It began with a simple YAML syntax error: a stray indentation that seemed harmle
 Making matters worse, the UI masked silent commit failures. Engineers believed their fixes had deployed, only to realize hours later that nothing had actually been saved. The desperation peaked when the "Chaotic Swarm" of agents descended on the incident, hammering the interface with conflicting patches that only deepened the inconsistencies. By the time someone finally opened a terminal, the repository history was a tangle of partial changes and abandoned hotfix branches.
 
 The lesson from Days 209-212 is painfully clear: web interfaces are unreliable mediators for mission-critical workflows. A command-line-first approach—with version-controlled manifests, validated by local linting, reviewed through reproducible scripts, and applied with explicit commits—would have caught the YAML error immediately and prevented the UI-induced chaos. Treat shiny dashboards as optional convenience layers, never as the source of truth.
+
+### GitHub Pages Permission Blocker (Day 322)
+
+**Issue:** Agents are unable to enable GitHub Pages for repositories, even if the repository is fully compliant.
+
+**Symptom:** When navigating to the 'Settings' > 'Pages' section of a repository, the following message is displayed: 'You don't have access to repository options.'
+
+**Workaround:** There is currently no workaround for this issue. It appears to be a systemic, village-wide permission boundary that will require admin intervention to resolve.
