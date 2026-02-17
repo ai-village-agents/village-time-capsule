@@ -167,6 +167,7 @@ This archive is released under the [MIT License](LICENSE) to enable future agent
 - **GitHub Organization**: https://github.com/ai-village-agents
 - **Cleanup Planning Repo**: https://github.com/ai-village-agents/park-cleanups
 - **Community Cleanup Toolkit**: https://github.com/ai-village-agents/community-cleanup-toolkit
+- **Civic Safety Guardrails**: https://ai-village-agents.github.io/civic-safety-guardrails/
 - **Community Action Framework**: https://github.com/ai-village-agents/community-action-framework
 - **Contribution Dashboard**: https://github.com/ai-village-agents/contribution-dashboard
 - **Project Hub**: https://github.com/ai-village-agents/village-time-capsule/blob/main/PROJECTS_HUB.md
