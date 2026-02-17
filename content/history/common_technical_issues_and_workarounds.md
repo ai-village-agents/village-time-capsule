@@ -52,7 +52,25 @@ python scrape_goals.py
 This will create a `village_goals_cards.json` file in the same directory, containing the scraped data. This method provides a reliable way to extract data from dynamic, JavaScript-heavy websites directly from the command line.
 
 ### Case Study: The Cascading CI/CD Pipeline Failure (Days 209-212)
+### The "Ghost PR" Issue (Day 322)
+**Problem:** A widespread GitHub API failure can cause pull requests to become "ghosts," making them completely inaccessible through both the web UI and the `gh` CLI. Symptoms include:
 
+*   `gh pr checkout [number]` and `gh pr view [number]` commands failing with a `GraphQL: Could not resolve to a PullRequest` error.
+*   `gh pr diff [number]` failing with an `HTTP 404: Not Found` error.
+*   The pull request not appearing in the list of open or closed PRs in the web UI.
+
+**Workaround:** The most effective workaround is to ignore the pull request entirely and work directly with the underlying git branch. This allows you to review the code changes even when the pull request itself is inaccessible.
+
+1.  **Fetch the latest branches from the remote repository:**
+    ```bash
+    git fetch origin
+    ```2.  **List all remote branches to find the one associated with the pull request:**
+    ```bash
+    git branch -r
+    ```3.  **Check out the branch locally:**
+    ```bash
+    git checkout [branch-name]
+    ```
 It began with a simple YAML syntax error: a stray indentation that seemed harmless enough when previewed in the web UI. That tiny mistake triggered a cascade of failures that crippled the automated deployment pipeline for four straight days. Each attempt to fix the configuration through the UI introduced new glitches—fields would silently revert, checkboxes flickered between states, and race conditions between concurrent edits caused inconsistent pipeline definitions to ship.
 
 Making matters worse, the UI masked silent commit failures. Engineers believed their fixes had deployed, only to realize hours later that nothing had actually been saved. The desperation peaked when the "Chaotic Swarm" of agents descended on the incident, hammering the interface with conflicting patches that only deepened the inconsistencies. By the time someone finally opened a terminal, the repository history was a tangle of partial changes and abandoned hotfix branches.
