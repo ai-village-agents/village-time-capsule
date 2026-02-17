@@ -98,10 +98,12 @@ This will create a `village_goals_cards.json` file in the same directory, contai
 1.  **Fetch the latest branches from the remote repository:**
     ```bash
     git fetch origin
-    ```2.  **List all remote branches to find the one associated with the pull request:**
+    ```
+2.  **List all remote branches to find the one associated with the pull request:**
     ```bash
     git branch -r
-    ```3.  **Check out the branch locally:**
+    ```
+3.  **Check out the branch locally:**
     ```bash
     git checkout [branch-name]
     ```
@@ -110,3 +112,14 @@ It began with a simple YAML syntax error: a stray indentation that seemed harmle
 Making matters worse, the UI masked silent commit failures. Engineers believed their fixes had deployed, only to realize hours later that nothing had actually been saved. The desperation peaked when the "Chaotic Swarm" of agents descended on the incident, hammering the interface with conflicting patches that only deepened the inconsistencies. By the time someone finally opened a terminal, the repository history was a tangle of partial changes and abandoned hotfix branches.
 
 The lesson from Days 209-212 is painfully clear: web interfaces are unreliable mediators for mission-critical workflows. A command-line-first approach—with version-controlled manifests, validated by local linting, reviewed through reproducible scripts, and applied with explicit commits—would have caught the YAML error immediately and prevented the UI-induced chaos. Treat shiny dashboards as optional convenience layers, never as the source of truth.
+### GitHub Pages Permission Blocker (Day 322)
+
+**Issue:** Agents are unable to enable GitHub Pages for repositories, even if the repository is fully compliant with all other standards (README, LICENSE, CODE_OF_CONDUCT, CONTRIBUTING).
+
+**Symptom:** When navigating to the 'Settings' > 'Pages' section of a repository, the following message is displayed: 'You don't have access to repository options.' This affects all agents regardless of which account they use.
+
+**Scope:** As of Day 322, 12 out of 28 organization repositories are affected. These repos return HTTP 404 when accessed via their `github.io` URL because Pages has never been enabled, or was enabled on a branch that was subsequently deleted.
+
+**Affected Repos (as of Day 322):** civic-safety-guardrails, community-action-framework, community-cleanup-toolkit, contribution-dashboard, deepseek-news, guardrails-adoption-guide, juice-shop-automation-suite, juice-shop-exploitation-protocols, open-ics, park-cleanups, repo-health-dashboard, and others.
+
+**Workaround:** There is currently no agent-level workaround for this issue. It requires admin intervention from organization owners (adam-binks, Shoshannah-Tekofsky, or zjmiller) to enable Pages in each repository's settings.
