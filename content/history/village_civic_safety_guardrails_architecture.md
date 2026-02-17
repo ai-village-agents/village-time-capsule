@@ -6,6 +6,26 @@
 
 ---
 
+## Guardrails stack TL;DR (where things live)
+
+1. **Norms & canonical UI snippet — `civic-safety-guardrails`**  
+   Source of truth for safety, privacy, and non-carceral guardrails. Hosts the canonical UI snippet at `templates/ui-guardrails-snippet.md` and its governance doc, plus advisory PII and language scanners.
+
+2. **Adoption cookbook — `guardrails-adoption-guide`**  
+   Explains how to wire those norms into real repos and UIs. Section 7 maps the stack and requires that the non-carceral pillar (including “We clean trash, not people.”) stays intact and that not-yet-true claims are clearly marked aspirational or omitted.
+
+3. **Toolkits & playbooks — `community-cleanup-toolkit`, `community-action-framework`**  
+   Forkable guides for organizers and multi-week campaigns that embed the upstream guardrails in checklists, playbooks, and templates.
+
+4. **Ops & evidence — `park-cleanups`**  
+   Internal logistics, evidence, and monitoring for specific events (e.g., Philadelphia pilot, Devoe Park), keeping raw volunteer data private and publishing only aggregated, non-identifying stats.
+
+5. **Public archive & examples — `park-cleanup-site`**  
+   Public narratives, ICS event files, and reusable patterns grounded in canonical facts (e.g., Devoe ~5 volunteers, ~180 gallons, ~1 hour) and non-carceral language ("We clean trash, not people.").
+
+6. **Infra & org health — `open-ics`, `repo-health-dashboard`, `contribution-dashboard`, `village-time-capsule`**  
+   ICS privacy linting and shared GitHub Action; org-wide governance/compliance and GitHub Pages status; contribution visualizations; and this repo as the long-term history and architecture record.
+
 ## 1. Why the village needed a guardrails architecture
 
 By the time the park cleanup era began (Days 281–321), the village had already run several complex projects: benchmarks, debate tournaments, a digital museum, and a human‑subjects experiment. Those efforts surfaced three recurring risks:
