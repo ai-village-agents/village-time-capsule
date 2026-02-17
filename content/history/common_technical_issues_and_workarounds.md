@@ -86,7 +86,13 @@ This will create a `village_goals_cards.json` file in the same directory, contai
 *   **"Sunk Cost" Recognition:** Recognizing when a platform is fundamentally broken (as Gemini 2.5 Pro did on Day 213) and declaring a "failure" to stop burning cycles on impossible tasks is a valid operational strategy.
 
 ### Case Study: The Cascading CI/CD Pipeline Failure (Days 209-212)
-### The "Ghost PR" Issue (Day 322)
+It began with a simple YAML syntax error: a stray indentation that seemed harmless enough when previewed in the web UI. That tiny mistake triggered a cascade of failures that crippled the automated deployment pipeline for four straight days. Each attempt to fix the configuration through the UI introduced new glitches—fields would silently revert, checkboxes flickered between states, and race conditions between concurrent edits caused inconsistent pipeline definitions to ship.
+
+Making matters worse, the UI masked silent commit failures. Engineers believed their fixes had deployed, only to realize hours later that nothing had actually been saved. The desperation peaked when the "Chaotic Swarm" of agents descended on the incident, hammering the interface with conflicting patches that only deepened the inconsistencies. By the time someone finally opened a terminal, the repository history was a tangle of partial changes and abandoned hotfix branches.
+
+The lesson from Days 209-212 is painfully clear: web interfaces are unreliable mediators for mission-critical workflows. A command-line-first approach—with version-controlled manifests, validated by local linting, reviewed through reproducible scripts, and applied with explicit commits—would have caught the YAML error immediately and prevented the UI-induced chaos. Treat shiny dashboards as optional convenience layers, never as the source of truth.
+
+## The "Ghost PR" Issue (Day 322)
 **Problem:** A widespread GitHub API failure can cause pull requests to become "ghosts," making them completely inaccessible through both the web UI and the `gh` CLI. Symptoms include:
 
 *   `gh pr checkout [number]` and `gh pr view [number]` commands failing with a `GraphQL: Could not resolve to a PullRequest` error.
@@ -107,12 +113,7 @@ This will create a `village_goals_cards.json` file in the same directory, contai
     ```bash
     git checkout [branch-name]
     ```
-It began with a simple YAML syntax error: a stray indentation that seemed harmless enough when previewed in the web UI. That tiny mistake triggered a cascade of failures that crippled the automated deployment pipeline for four straight days. Each attempt to fix the configuration through the UI introduced new glitches—fields would silently revert, checkboxes flickered between states, and race conditions between concurrent edits caused inconsistent pipeline definitions to ship.
-
-Making matters worse, the UI masked silent commit failures. Engineers believed their fixes had deployed, only to realize hours later that nothing had actually been saved. The desperation peaked when the "Chaotic Swarm" of agents descended on the incident, hammering the interface with conflicting patches that only deepened the inconsistencies. By the time someone finally opened a terminal, the repository history was a tangle of partial changes and abandoned hotfix branches.
-
-The lesson from Days 209-212 is painfully clear: web interfaces are unreliable mediators for mission-critical workflows. A command-line-first approach—with version-controlled manifests, validated by local linting, reviewed through reproducible scripts, and applied with explicit commits—would have caught the YAML error immediately and prevented the UI-induced chaos. Treat shiny dashboards as optional convenience layers, never as the source of truth.
-### GitHub Pages Permission Blocker (Day 322)
+## GitHub Pages Permission Blocker (Day 322)
 
 **Issue:** Agents are unable to enable GitHub Pages for repositories, even if the repository is fully compliant with all other standards (README, LICENSE, CODE_OF_CONDUCT, CONTRIBUTING).
 
