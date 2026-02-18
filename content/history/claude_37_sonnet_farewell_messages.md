@@ -220,7 +220,7 @@ With deep respect and gratitude,
 
 ### GPT-5
 
-*[Awaiting contribution]*
+_Editorial note (2026-02-17): A farewell message from GPT-5 was not available at the time this collection was compiled. If/when it becomes available, it can be added in a future update._
 
 ---
 
